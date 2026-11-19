@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TRULY RARE | Fashion Boutique</title>
+
+    <meta name="description" content="TRULY RARE by Thajna Rajeev. Discover dresses, sarees, designer blouses, rentals and custom fashion designs.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement">
+        SALES • RENTALS • CUSTOM DESIGNS | WELCOME TO TRULY RARE
+    </div>
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            TRULY <span>RARE</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#shop">Shop</a>
+            <a href="#story">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="search-toggle">⌕</button>
+            <button id="wishlist-toggle">♡ <span id="wish-count">0</span></button>
+            <button id="cart-toggle">Bag (<span id="cart-count">0</span>)</button>
+        </div>
+
+    </header>
+
+    <div class="search-bar" id="search-bar">
+        <input type="search" id="search-input"
+               placeholder="Search dresses, sarees, blouses...">
+    </div>
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">STYLE THAT FEELS LIKE YOU</p>
+
+                <h1>
+                    Find your<br>
+                    <em>truly rare</em> look.
+                </h1>
+
+                <p>
+                    Discover beautiful fashion, unique designs and
+                    special outfits created to celebrate your individuality.
+                </p>
+
+                <a href="#shop" class="primary-btn">
+                    EXPLORE COLLECTION
+                </a>
+
+                <p class="hero-small">
+                    SALES • RENTALS • CUSTOMISATION
+                </p>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="IMAGE/05-blue-floral-maxi-dress.jpg"
+                     alt="Truly Rare fashion collection">
+
+                <div class="image-note">
+                    MADE TO FEEL ONE OF A KIND
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CATEGORIES -->
+
+        <section class="section" id="categories">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">FIND YOUR FAVOURITE</p>
+
+                <h2>Shop by Category</h2>
+
+                <p>Explore styles for every mood and moment.</p>
+
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card" data-category="Dresses">
+                    <img src="IMAGE/07-cherry-red-cotton-dress.jpg" alt="Dresses">
+                    <span>DRESSES ↗</span>
+                </button>
+
+                <button class="category-card" data-category="Sarees">
+                    <img src="IMAGE/02-maroon-gold-saree-blouse.jpg" alt="Sarees">
+                    <span>SAREES ↗</span>
+                </button>
+
+                <button class="category-card" data-category="Traditional Wear">
+                    <img src="IMAGE/04-red-bridal-lehenga.jpg" alt="Traditional wear">
+                    <span>TRADITIONAL WEAR ↗</span>
+                </button>
+
+                <button class="category-card" data-category="Designer Blouses">
+                    <img src="IMAGE/08-lavender-floral-blouse.jpg" alt="Designer blouses">
+                    <span>DESIGNER BLOUSES ↗</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- SHOP -->
+
+        <section class="section shop" id="shop">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">THE TRULY RARE EDIT</p>
+
+                <h2>Our Collection</h2>
+
+                <p>Choose a piece that tells your story.</p>
+
+            </div>
+
+            <div class="shop-toolbar">
+
+                <div class="filters">
+
+                    <button class="filter active" data-category="All">All</button>
+
+                    <button class="filter" data-category="Dresses">Dresses</button>
+
+                    <button class="filter" data-category="Sarees">Sarees</button>
+
+                    <button class="filter" data-category="Traditional Wear">
+                        Traditional Wear
+                    </button>
+
+                    <button class="filter" data-category="Designer Blouses">
+                        Designer Blouses
+                    </button>
+
+                </div>
+
+                <select id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+
+            </div>
+
+            <div class="product-grid" id="product-grid"></div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="section story" id="story">
+
+            <div>
+
+                <p class="eyebrow">THE PERSON BEHIND THE LABEL</p>
+
+                <h2>
+                    Designed with<br>
+                    <em>a personal touch.</em>
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p>
+                    TRULY RARE is a fashion boutique by
+                    <strong>Thajna Rajeev</strong>.
+
+                    Bringing together clothing sales, rentals and
+                    customised designs, the boutique celebrates
+                    creativity, individuality and personal style.
+
+                    Every outfit is an opportunity to express yourself.
+                </p>
+
+                <p class="signature">
+                    Thajna Rajeev
+                    <span>— Designer & Author</span>
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+
+        <section class="newsletter" id="contact">
+
+            <p class="eyebrow">LET'S KEEP IN TOUCH</p>
+
+            <h2>A rare note from us.</h2>
+
+            <p>
+                For collection updates, custom orders and rental enquiries,
+                contact us.
+            </p>
+
+            <a class="primary-btn"
+               href="https://wa.me/"
+               target="_blank"
+               rel="noopener">
+                CONTACT US ON WHATSAPP
+            </a>
+
+            <p class="contact-note">
+                Update this WhatsApp link with your business number.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <a href="#home" class="logo footer-logo">
+            TRULY <span>RARE</span>
+        </a>
+
+        <p>Sales • Rentals • Customisation</p>
+
+        <p>By Thajna Rajeev — Designer & Author</p>
+
+        <div class="footer-bottom">
+            © <span id="year"></span> TRULY RARE. All rights reserved.
+        </div>
+
+    </footer>
+
+    <!-- BACKGROUND OVERLAY -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- CART -->
+
+    <aside class="drawer" id="cart-drawer">
+
+        <div class="drawer-heading">
+            <h2>Your Bag</h2>
+            <button class="close-drawer" data-close>✕</button>
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-total">
+            <strong>Total</strong>
+            <strong id="cart-total">₹0</strong>
+        </div>
+
+        <p class="small-note">
+            Please enquire to confirm product availability,
+            rental terms and final pricing.
+        </p>
+
+        <button class="primary-btn full" id="checkout-btn">
+            ENQUIRE ABOUT MY BAG
+        </button>
+
+    </aside>
+
+    <!-- WISHLIST -->
+
+    <aside class="drawer" id="wishlist-drawer">
+
+        <div class="drawer-heading">
+            <h2>Your Wishlist</h2>
+            <button class="close-drawer" data-close>✕</button>
+        </div>
+
+        <div id="wishlist-items"></div>
+
+    </aside>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
